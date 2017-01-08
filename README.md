@@ -11,21 +11,21 @@ apt -y install libnet-bluetooth-perl libdbi-perl libdbd-sqlite3-perl
 
 Table board:
 
-  address: mac address ( xx:xx:xx:xx:xx )
+  * address: mac address ( xx:xx:xx:xx:xx )
 
-  time_in: epoch time ( 1234567 )
+  * time_in: epoch time ( 1234567 )
   
-   time_out: epoch time ( 1234567 )
+  * time_out: epoch time ( 1234567 )
 
 Table device:
   
-  address: mac address ( xx:xx:xx:xx:xx )
+  * address: mac address ( xx:xx:xx:xx:xx )
   
-  name: given name of device ( Your Iphone )
+  * name: given name of device ( Your Iphone )
   
-  checkin_time: epoch time ( 1234567 )
+  * checkin_time: epoch time ( 1234567 )
   
-  last_seen: epoch time ( 1234567 )
+  * last_seen: epoch time ( 1234567 )
   
-  available: boolean true if checked in ( 0 | 1 )
+  * available: boolean true if checked in ( 0 | 1 )
  
