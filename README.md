@@ -1,6 +1,8 @@
 # bluetooth-in-out-monitor
 Database backed Bluetooth scanner for Raspberry Pi
 
+By running the script it will monitor and record bluetooth scanned presence and keep track of them on an in-out board database.   The database is ia sqlite database called bluetooth_monitor.db.  Other scripts can then access this data and use it to relay relevent information to other services about the presence of blootooth monitored devices in it's area.
+
 ## Install modules required
 apt -y install libnet-bluetooth-perl libdbi-perl libdbd-sqlite3-perl
 
@@ -19,13 +21,12 @@ Table board:
 
 Table device:
   
-  * address: mac address ( xx:xx:xx:xx:xx )
+  * address: mac address ( xx:xx:xx:xx:xx ) ( unique )
   
-  * name: given name of device ( Your Iphone )
+  * name: given name of device ( Your IPhone )
   
   * checkin_time: epoch time ( 1234567 )
   
   * last_seen: epoch time ( 1234567 )
   
   * available: boolean true if checked in ( 0 | 1 )
- 
